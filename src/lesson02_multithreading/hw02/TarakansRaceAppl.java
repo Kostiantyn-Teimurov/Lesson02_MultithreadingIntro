@@ -29,7 +29,7 @@ public class TarakansRaceAppl {
         for (int i = 1; i < tarakans.length; i++) {
             threads[i].join();
         }
-        System.out.println("Congratulations to: " + TarakansTasks.winner + "!");
+        System.out.println("Congratulations to: " + TarakansTasks.getWinner() + "!");
 
     }
 }

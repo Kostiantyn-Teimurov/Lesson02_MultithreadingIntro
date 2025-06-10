@@ -5,11 +5,15 @@ import java.util.Random;
 public class TarakansTasks implements Runnable{
     private String name;
     private int distance;
-    public static String winner;
+    private static String winner;
 
     public TarakansTasks(String name, int distance) {
         this.name = name;
         this.distance = distance;
+    }
+
+    public static String getWinner() {
+        return winner;
     }
 
     @Override
